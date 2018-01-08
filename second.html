@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Second Java Script</title>
+</head>
+<body>
+<script>
+	//var num = [33,54,67,89,23,90];
+
+	//num.forEach(function(number){console.log(number)});
+
+	var fru = 'orange';
+
+	/*switch(fru)
+	{
+		case 'banana': alert('banana'); break;
+		case 'apple' : alert('apple'); break;
+		default : alert('I love all fruits');
+	}*/
+
+	var person = {
+		firstName: 'Yasith',
+		lastName: 'Ediri',
+		age:23,
+		toBe: ['SE','Musician'],
+		address:{
+			street:'hrd',
+			city: 'kandy',
+			country : 'SL'
+	},
+fullName:function(){
+		return this.firstName+" "+this.lastName;
+			}
+}	
+
+console.log(person.fullName());
+</script>
+
+</body>
+</html>

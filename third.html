@@ -1,0 +1,65 @@
+<html>
+<head>
+   <title>Third_Objects</title>
+</head>
+
+<body>
+<script>
+
+var apple = new Object();
+apple.color = 'red';
+apple.shape = 'round';
+
+apple.describe = function(){
+	return 'An apple is the color '+this.color+' and it has '+this.shape+' shape.'
+}
+
+console.log(apple.describe());
+
+function Fruit(name,color,shape){
+	this.name = name;
+	this.color = color;
+	this.shape = shape;
+
+	this.describ = function(){
+		return   this.name+' is a '+this.color+' and '+this.shape+' shape fruit.';
+	}
+} 
+
+var apple = new Fruit('apple','red','round');
+
+var melon = new Fruit('melon','green','round');
+
+console.log(apple);
+console.log(melon);
+console.log(apple.describ());
+
+
+
+var users = [
+	{
+		name: 'JK Rowl',
+		age:30
+
+	},
+
+	{
+		name:'dissydara',
+		age:21
+	},
+
+	{
+		name: 'sunil N',
+		age:46
+	}
+	
+];
+
+console.log(users[2]);
+
+
+
+</script>
+
+</body>
+</html>

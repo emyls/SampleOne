@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Events learning</title>
+</head>
+
+<body onload="showDate()">
+<h1 id="time"></h1>
+<button onmouseout="clearDate()" onmouseover="showDate()">Show Date</button>
+
+<button ondblclick="showDate()">Next One</button>
+
+
+<script>
+
+
+function showDate(){ 
+
+	var time = document.getElementById('time');	    
+	time.innerHTML = Date();
+}
+
+function clearDate(){
+	var time = document.getElementById('time');
+	time.innerHTML = '';
+}
+
+</script>
+</body>
+
+</html>
